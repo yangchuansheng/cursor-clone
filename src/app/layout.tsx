@@ -1,20 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "AI Coding Agent for Building Ambitious Software | Cursor",
+  description: "Cursor is your coding agent for building ambitious software.",
+  icons: {
+    icon: "/marketing-static/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -24,10 +16,17 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      lang="en-US"
+      data-os="mac"
+      data-device="default"
+      data-theme="dark"
+      className="Sj65MG_variable aDRXRq_variable -Zg_XW_variable _8qwdia_variable"
+      style={{ colorScheme: "dark" }}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="bg-theme-bg text-theme-text min-h-screen pt-[var(--site-header-height)]">
+        {children}
+      </body>
     </html>
   );
 }
