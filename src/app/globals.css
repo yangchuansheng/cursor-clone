@@ -38,3 +38,11 @@ pre.shiki .line {
 .slack-ui-demo .slack-mention {
   color: var(--color-slack-link, #2d629e);
 }
+.media-border-container:has(.page_gridBox__1Nzpe){background:0 0!important;border:none!important}
+.media-border-container:has(.page_gridBox__1Nzpe):after{display:none!important}
+.page_gridBox__1Nzpe{aspect-ratio:1;width:320px;height:320px;margin-left:auto;margin-right:auto}
+.page_gridCanvas__GK3dR{width:100%;height:100%;display:block}
+.page_hiddenCanvas__5Mo4j{display:none}
+@media (prefers-reduced-motion:reduce){.page_gridCanvas__GK3dR{filter:contrast(.95)brightness(1.1)}}
+.page_asciiBlock___W5Nw{color:#e5e5e5;white-space:pre;-webkit-user-select:none;user-select:none;background:0 0;width:100%;height:100%;margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:clamp(6px,1.25vw,12px);font-weight:600;line-height:1}
+html.light .page_asciiBlock___W5Nw{color:#282720}
